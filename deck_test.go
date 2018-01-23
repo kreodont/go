@@ -34,5 +34,6 @@ func TestSaveToFileAndNewDeckFromFile(t *testing.T){
 	if len(restoredDeck) != 52 {
 		t.Errorf("Loaded deck must have 52 cards, but there are only %v", len(restoredDeck))
 	}
+	os.Remove("_test")
 
 }
